@@ -9,7 +9,7 @@ interface IAccessTokenResponse {
 interface IUserResponse {
     avatar_url: string;
     login: string;
-    id: number,
+    id: number;
     name: string;
 }
 
@@ -21,7 +21,7 @@ class AuthenticateUserService {
             params: {
                 client_id: process.env.GITHUB_CLIENT_ID,
                 client_secret: process.env.GITHUB_CLIENT_SECRET,
-                code,
+                code
             },
             headers: {
                 "Accept": "application/json"
@@ -43,7 +43,7 @@ class AuthenticateUserService {
         });
 
         if(!user) {
-            user = await prismaClient.user.create({
+           user = await prismaClient.user.create({
                 data: {
                     github_id: id,
                     login,
@@ -53,19 +53,20 @@ class AuthenticateUserService {
             });
         }
 
-        const token = sign({
-            user: {
-                name: user.name,
-                avatar_url: user.avatar_url,
-                id: user.id
-            }
+        const token = sign(
+            {
+                user: {
+                    name: user.name,
+                    avatar_url: user.avatar_url,
+                    id: user.id
+                }
             },
             process.env.JWT_SECRET,
             {
                 subject: user.id,
                 expiresIn: "1d"
             }
-        );
+        )
 
         return { token, user };
     }

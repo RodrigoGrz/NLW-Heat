@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add -D prisma@3.2.1
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add -D prisma@3.3.0
 
 PATH: 
-  C:\Users\rodri\AppData\Local\Temp\yarn--1634602115063-0.6911019479237983;C:\Users\rodri\Documents\nlwheat\node_modules\.bin;C:\Users\rodri\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\rodri\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Users\rodri\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\dotnet;C:\php8;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\rodri\AppData\Local\Microsoft\WindowsApps;C:\Users\rodri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rodri\AppData\Roaming\npm;C:\Users\rodri\AppData\Local\GitHubDesktop\bin;C:\Users\rodri\.dotnet\tools;C:\Users\rodri\AppData\Local\Yarn\bin;C:\Users\rodri\AppData\Roaming\Composer\vendor\bin
+  C:\Users\rodri\AppData\Local\Temp\yarn--1634689522598-0.6426723485729655;C:\Users\rodri\OneDrive\Documentos\NLW-Heat\node_modules\.bin;C:\Users\rodri\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\rodri\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Users\rodri\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\dotnet;C:\php8;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\rodri\AppData\Local\Microsoft\WindowsApps;C:\Users\rodri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rodri\AppData\Roaming\npm;C:\Users\rodri\AppData\Local\GitHubDesktop\bin;C:\Users\rodri\.dotnet\tools;C:\Users\rodri\AppData\Local\Yarn\bin;C:\Users\rodri\AppData\Roaming\Composer\vendor\bin
 
 Yarn version: 
   1.22.5
@@ -14,13 +14,15 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\rodri\Documents\nlwheat\node_modules\prisma\query_engine-windows.dll.node'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\rodri\OneDrive\Documentos\NLW-Heat\node_modules\prisma\query_engine-windows.dll.node'
 
 npm manifest: 
   {
-    "name": "nlwheat",
+    "name": "NLW-Heat",
     "version": "1.0.0",
     "main": "index.js",
+    "repository": "https://github.com/RodrigoGrz/NLW-Heat.git",
+    "author": "Rodrigo Grzegorczyk <rodrigo.gregorio1@hotmail.com>",
     "license": "MIT",
     "scripts": {
       "dev": "ts-node-dev src/app.ts"
@@ -35,7 +37,7 @@ npm manifest:
       "@types/axios": "^0.14.0",
       "@types/express": "^4.17.13",
       "@types/jsonwebtoken": "^8.5.5",
-      "prisma": "^3.2.1",
+      "prisma": "^3.3.0",
       "ts-node-dev": "^1.1.8",
       "typescript": "^4.4.4"
     }
@@ -49,10 +51,10 @@ Lockfile:
   # yarn lockfile v1
   
   
-  "@prisma/engines@3.2.1-1.b71d8cb16c4ddc7e3e9821f42fd09b0f82d7934c":
-    version "3.2.1-1.b71d8cb16c4ddc7e3e9821f42fd09b0f82d7934c"
-    resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-3.2.1-1.b71d8cb16c4ddc7e3e9821f42fd09b0f82d7934c.tgz#d2a41a76a89548ea411043c3198eee4a75475dbb"
-    integrity sha512-wnHODKLQGKkE2ZCHxHQEf/4Anq/EP0ZCvX++D5w34033mwZ94iZiOsEKZZ31fgki7MTh28F1VNF5ZSFdnRjgvQ==
+  "@prisma/engines@3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c":
+    version "3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c"
+    resolved "https://registry.yarnpkg.com/@prisma/engines/-/engines-3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c.tgz#99026c466ffe1229c94e3392a1ae923a149be4f1"
+    integrity sha512-T3nEnRWmoneNZJPd9IBR29G8ZDUjNelA8+cG5y8/lh6vySm6ryWSNxj1s377U9YzFYyZmXiA9vK1iyxMoRff/g==
   
   "@types/axios@^0.14.0":
     version "0.14.0"
@@ -718,12 +720,12 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
     integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
   
-  prisma@^3.2.1:
-    version "3.2.1"
-    resolved "https://registry.yarnpkg.com/prisma/-/prisma-3.2.1.tgz#696871f6d0e374df2de96297df4c04756ee6e3b5"
-    integrity sha512-nXhldcFYemNSMqdTAEziggVWBNbCHTrr0amkCJruP3G2AFpzxrKtksPRLYNetxdKMJAt7aRRumusbtmTTDgyzw==
+  prisma@^3.3.0:
+    version "3.3.0"
+    resolved "https://registry.yarnpkg.com/prisma/-/prisma-3.3.0.tgz#9fd685111c26d078dd7eb6ffaddc584a33ec42b4"
+    integrity sha512-E7C9mXRwZVpcnSeJT533qGHUVrYULsE9ihFvAtQMuxhTXkxoRlMLyo/1ZOyeu9GdXP8DJ7ruLOw06kEs/N3dVg==
     dependencies:
-      "@prisma/engines" "3.2.1-1.b71d8cb16c4ddc7e3e9821f42fd09b0f82d7934c"
+      "@prisma/engines" "3.3.0-30.33838b0f78f1fe9052cf9a00e9761c9dc097a63c"
   
   proxy-addr@~2.0.5:
     version "2.0.7"
